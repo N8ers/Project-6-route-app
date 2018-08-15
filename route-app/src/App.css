@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  font-size: 25px;
+}
+
+li{
+  list-style: none;
+  display: inline;
+  margin: 20px;
 }
 
 .App-logo {
