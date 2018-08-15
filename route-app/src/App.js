@@ -15,6 +15,7 @@ class App extends Component {
           <ul>
             <li><link to="/One">One</link></li>
             <li><link to="/Two">Two</link></li>
+            <li><link to="/Three">Three</link></li>
           </ul>
       </div>
     );
