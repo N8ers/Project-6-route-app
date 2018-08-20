@@ -6,6 +6,7 @@ import One from './One';
 import Two from './Two';
 import Three from './Three';
 import Four from './Four';
+import NoMatch from './Fourpointone';
 import NoMatch from './NoMatch';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -21,7 +22,10 @@ ReactDOM.render(
         <Route path="/One" component={One}></Route>
         <Route path="/Two" component={Two}></Route>
         <Route path="/Three" component={Three}></Route>
-        <Route path="/Four" component={Four}></Route>
+        <Route path="/Four" component={Four}>
+            <Route path="/Four/:id" component={Fourpointone} />
+
+        </Route>
 
         <Route path="*" component={NoMatch}></Route>
     </Router>
